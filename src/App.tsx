@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "components/layouts/Navbar"
 import LandingPage from "views/LandingPage"
-import JobTimeline from "views/JobTimeline"
+import AboutMe from "views/aboutMe/AboutMe"
 import ProjectsSection from "views/ProjectsSection"
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <LandingPage />
-      <JobTimeline />
+      <AboutMe />
       <ProjectsSection />
     </>
   )

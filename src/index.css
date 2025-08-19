@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
 :root {
   color: white;
   background-color: #242424;
@@ -5,4 +17,33 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 4px 0px #22d3ee;
+  }
+  50% {
+    box-shadow: 0 0 4px 0px #ff4aff;
+  }
+  100% {
+    box-shadow: 0 0 4px 0px #22d3ee;
+  }
+}
+
+.border-glow {
+  animation: glow-animation 5s linear infinite;
+}
+
+.border-top {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #22d3ee, #ff4aff);
+}
+
+.hover {
+  &:hover {
+    color: #22d3ee;
+  }
 }
