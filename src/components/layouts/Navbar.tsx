@@ -5,15 +5,15 @@ const Navbar = () => {
   return (
     <Box position="absolute" top="20px" left={0} right={0} zIndex={111}>
       <Box
-        className="border-glow"
+        className="border-glow backdrop-blur"
         width="100%"
         maxWidth="1280px"
         mx="auto"
-        bg="blue.950"
+        bg="blue.950/65"
         paddingX="2rem"
         paddingY="0.75rem"
         color="white"
-        rounded="full"
+        rounded="xl"
       >
         <Flex justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
@@ -37,7 +37,7 @@ const Navbar = () => {
                 About me
               </Link>
             </List.Item>
-            <List.Item>
+            {/*             <List.Item>
               <Link
                 href="#projects"
                 className="hover"
@@ -46,7 +46,7 @@ const Navbar = () => {
               >
                 Projects
               </Link>
-            </List.Item>
+            </List.Item> */}
           </List.Root>
         </Flex>
       </Box>

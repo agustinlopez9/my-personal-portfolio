@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
-const Bio = () => {
+const MyBio = () => {
   return (
-    <Box textAlign="center" marginY="2rem" maxWidth="1080px" zIndex={1} >
+    <Box textAlign="center" marginY="4rem" maxWidth="1080px" zIndex={1}>
       <Text
         display="inline-block"
         fontSize="xl"
@@ -15,10 +15,7 @@ const Bio = () => {
         About me
       </Text>
       <Flex alignItems="center">
-        <Text 
-          textAlign="justify"
-          marginX="2rem"
-        >
+        <Text textAlign="justify" textStyle="md" marginX="2rem">
           I am a dedicated software developer with a passion for creating
           intuitive user interfaces and dynamic designs. My journey began in
           2020, since then I've been improving my skills and knowledge in both
@@ -41,4 +38,4 @@ const Bio = () => {
   );
 };
 
-export default Bio;
+export default MyBio;

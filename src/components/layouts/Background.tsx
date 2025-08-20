@@ -26,7 +26,7 @@ const Background = ({ children }: Props) => {
           xOffset: 0.0,
           yOffset: 0.0,
           size: 1.5,
-        })
+        }),
       );
     }
     return () => {

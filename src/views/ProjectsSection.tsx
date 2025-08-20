@@ -13,12 +13,10 @@ const ProjectsSection = () => {
         <Heading as="h2" size="lg" mb={4}>
           My Projects
         </Heading>
-        <Text>
-          Here are some of the projects I've worked on:
-        </Text>
+        <Text>Here are some of the projects I've worked on:</Text>
       </Box>
     </Flex>
   );
-}
+};
 
 export default ProjectsSection;

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Box, Center, Image, Link } from "@chakra-ui/react";
+import { Box, Center, Image } from "@chakra-ui/react";
 import Background from "components/layouts/Background";
 import {
   motion,
@@ -60,24 +60,12 @@ const LandingPage = () => {
           alignItems="center"
           gap="4rem"
           maxWidth="1200px"
-          marginY="10rem"
+          marginY="13rem"
           rounded="lg"
           style={{
             perspective: "1000px",
           }}
         >
-          <Link
-            className="border-glow hover"
-            href="src/assets/resume.pdf"
-            target="_blank"
-            padding="1rem"
-            rounded="md"
-            bg="blue.950"
-            color="white"
-            outline="none"
-          >
-            My Resume
-          </Link>
           <motion.div
             ref={ref}
             onMouseMove={handleMouseMove}
@@ -90,11 +78,9 @@ const LandingPage = () => {
             <Image
               src="src/assets/text_editor.png"
               alt="text_editor.png"
+              className="box-shadow-big"
               rounded="xl"
               opacity={0.9}
-              style={{
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.9)",
-              }}
             />
           </motion.div>
         </Box>

@@ -1,8 +1,8 @@
-import React from "react"
-import Navbar from "components/layouts/Navbar"
-import LandingPage from "views/LandingPage"
-import AboutMe from "views/aboutMe/AboutMe"
-import ProjectsSection from "views/ProjectsSection"
+import React from "react";
+import Navbar from "components/layouts/Navbar";
+import LandingPage from "views/LandingPage";
+import AboutMe from "views/aboutMe/AboutMe";
+//import ProjectsSection from "views/ProjectsSection"
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
       <Navbar />
       <LandingPage />
       <AboutMe />
-      <ProjectsSection />
+      {/*       <ProjectsSection /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

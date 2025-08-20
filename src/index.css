@@ -35,7 +35,19 @@ body {
   animation: glow-animation 5s linear infinite;
 }
 
-.border-top {
+.box-shadow-big {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.9);
+}
+
+.box-shadow-small {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.35);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+.border-gradient {
   border-top: 3px solid;
   border-bottom: 3px solid;
   border-image-slice: 1;

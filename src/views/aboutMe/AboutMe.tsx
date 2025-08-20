@@ -1,13 +1,14 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Bio from "./Bio";
-import MyTimeline from "./MyTimeline";
+import MyBio from "./components/MyBio";
+import MyLinks from "./components/MyLinks";
+import MyTimeline from "./components/MyTimeline";
 
 const AboutMe = () => {
   return (
     <Box
       id="about-me"
-      className="border-top"
+      className="border-gradient"
       display="flex"
       flexDirection="column"
       alignItems="center"
@@ -24,7 +25,8 @@ const AboutMe = () => {
         zIndex={0}
         filter="blur(100px)"
       />
-      <Bio />
+      <MyBio />
+      <MyLinks />
       <MyTimeline />
     </Box>
   );
