@@ -6,16 +6,7 @@ import TimelineItem from "components/common/TimelineItem";
 const TimelineData = [
   {
     icon: <MdWork />,
-    title: "Front-end developer.",
-    company: "HackCTF",
-    date: "December 2020 - March 2022",
-    description:
-      "I helped develop a platform for learning and practicing cybersecurity skills through different hacking challenges.",
-    tools: ["React", "Tailwind CSS", "Firebase"],
-  },
-  {
-    icon: <MdWork />,
-    title: "Full-stack developer.",
+    title: "Full-stack developer",
     company: "Sinaptia",
     date: "March 2022 - Present",
     description:
@@ -28,21 +19,35 @@ const TimelineData = [
     ],
     tools: [
       "React",
-      "Ruby on Rails",
-      "Node.js",
       "TypeScript",
+      "Tailwind",
+      "Emotion",
+      "Material UI",
+      "Node.js",
+      "Ruby on Rails",
+      "Express",
       "GraphQL",
       "PostgreSQL",
+      "Jest",
       "Cypress",
       "AWS",
     ],
+  },
+  {
+    icon: <MdWork />,
+    title: "Front-end developer",
+    company: "HackCTF",
+    date: "December 2020 - March 2022",
+    description:
+      "I helped develop a platform for learning and practicing cybersecurity skills through different hacking challenges.",
+    tools: ["React", "JavaScript", "Tailwind CSS", "Firebase"],
   },
 ];
 
 const MyTimeline = () => {
   return (
-    <Box marginY="4rem">
-      <Timeline.Root maxW="700px" size="xl">
+    <Box marginY="4rem" width="full">
+      <Timeline.Root width="full" size="xl">
         {TimelineData.map((item, index) => (
           <TimelineItem key={index} {...item} />
         ))}

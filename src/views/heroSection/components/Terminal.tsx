@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import { Box, Center, Image } from "@chakra-ui/react";
-import Background from "components/layouts/Background";
+import { Box, Text } from "@chakra-ui/react";
 import {
   motion,
   useMotionTemplate,
@@ -10,7 +9,7 @@ import {
 
 const ROTATION_RANGE = 10;
 
-const LandingPage = () => {
+const Terminal = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
 
@@ -51,42 +50,46 @@ const LandingPage = () => {
   };
 
   return (
-    <Background>
-      <Center>
-        <Box
-          position="relative"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          gap="4rem"
-          maxWidth="1200px"
-          marginY="13rem"
-          rounded="lg"
-          style={{
-            perspective: "1000px",
-          }}
-        >
-          <motion.div
-            ref={ref}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              transformStyle: "preserve-3d",
-              transform,
-            }}
-          >
-            <Image
-              src="src/assets/text_editor.png"
-              alt="text_editor.png"
-              className="box-shadow-big"
-              rounded="xl"
-              opacity={0.9}
-            />
-          </motion.div>
+    <Box
+      position="relative"
+      gap="4rem"
+      maxWidth="600px"
+      style={{
+        perspective: "1000px",
+      }}
+    >
+      <Box
+        className="background-gradient"
+        position="absolute"
+        width="600px"
+        height="600px"
+        bottom="-50%"
+        rounded="full"
+        zIndex={-1}
+        filter="blur(300px)"
+      />
+      <motion.div
+        ref={ref}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          transformStyle: "preserve-3d",
+          transform,
+        }}
+      >
+        <Box bg="blackAlpha.700" borderWidth="1px" borderColor="gray.800" lineHeight="1.75rem" width="550px" height="min-content" padding="2rem" rounded="xl">
+          <Text color="green.600">// Welcome to my portfolio </Text>
+          <br />
+            <Text>{`const myInfo =  {`}</Text>
+            <Text marginLeft="1rem">{`location: "Buenos Aires, Argentina" `}</Text>
+            <Text marginLeft="1rem">{`languages: ["Spanish", "English"]`}</Text>
+            <Text marginLeft="1rem">{`softSkills: ["Problem Solving", "Communication", "Teamwork", "Adaptability"], `}</Text>
+            <Text marginLeft="1rem">{`wantToLearn: ["Electron", "React Native"] `}</Text>
+            <Text>{`}`}</Text>
         </Box>
-      </Center>
-    </Background>
+      </motion.div>
+    </Box>
   );
 };
 
-export default LandingPage;
+export default Terminal;

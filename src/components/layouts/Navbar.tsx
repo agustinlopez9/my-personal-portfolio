@@ -3,17 +3,13 @@ import { Box, Flex, Link, List } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <Box position="absolute" top="20px" left={0} right={0} zIndex={111}>
+    <Box position="fixed" left="0" right="0" zIndex={11} bg="blackAlpha.900" borderBottomColor="gray.800" borderBottomWidth="1px">
       <Box
-        className="border-glow backdrop-blur"
-        width="100%"
         maxWidth="1280px"
         mx="auto"
-        bg="blue.950/65"
         paddingX="2rem"
         paddingY="0.75rem"
-        color="white"
-        rounded="xl"
+        zIndex={11111}
       >
         <Flex justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
@@ -29,24 +25,37 @@ const Navbar = () => {
           <List.Root display="flex" flexDirection="row" gap="2rem" unstyled>
             <List.Item>
               <Link
-                href="#about-me"
-                className="hover"
+                href="#"
+                className="link-hover"
                 color="white"
+                textDecoration="none"
+                outline="none"
+              >
+                Home
+              </Link>
+            </List.Item>
+            <List.Item>
+              <Link
+                href="#about-me"
+                className="link-hover"
+                color="white"
+                textDecoration="none"
                 outline="none"
               >
                 About me
               </Link>
             </List.Item>
-            {/*             <List.Item>
+            <List.Item>
               <Link
                 href="#projects"
-                className="hover"
+                className="link-hover"
                 color="white"
+                textDecoration="none"
                 outline="none"
               >
                 Projects
               </Link>
-            </List.Item> */}
+            </List.Item>
           </List.Root>
         </Flex>
       </Box>

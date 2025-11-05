@@ -12,7 +12,7 @@ body {
 
 :root {
   color: white;
-  background-color: #242424;
+  background-color: #010101;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -54,8 +54,20 @@ body {
   border-image-source: linear-gradient(to right, #22d3ee, #ff4aff);
 }
 
-.hover {
+.link-hover {
+  transition: all ease-in-out 0.1s;
   &:hover {
-    color: #22d3ee;
+    color: #2563eb; /* blue.600 */
   }
+}
+
+.background-gradient {
+  background: -webkit-linear-gradient(45deg, #2563eb, #4ade80 60%); /* blue.600 to green.400 */
+  opacity: 15%;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(45deg, #2563eb, #4ade80 60%); /* blue.600 to green.400 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

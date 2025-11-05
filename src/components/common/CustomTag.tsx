@@ -9,9 +9,11 @@ const CustomTag = ({ name, ...props }: CustomTagProps) => {
   return (
     <Tag.Root
       paddingY="0.5rem"
-      paddingX="0.5rem"
-      bg="blue.900"
-      color="white"
+      paddingX="0.75rem"
+      bg="blue.950/50"
+      color="blue.600"
+      variant="solid"
+      rounded="full"
       {...props}
     >
       <Tag.Label fontSize="sm">{name}</Tag.Label>
