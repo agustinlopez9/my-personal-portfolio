@@ -13,6 +13,7 @@ const HeroSection = () => {
       height="100vh"
       minHeight="650px"
       maxHeight="1200px"
+      overflow="hidden"
     >
       <Intro />
       <Terminal />

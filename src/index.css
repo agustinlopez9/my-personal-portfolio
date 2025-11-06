@@ -19,22 +19,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes glow-animation {
-  0% {
-    box-shadow: 0 0 4px 0px #22d3ee;
-  }
-  50% {
-    box-shadow: 0 0 4px 0px #ff4aff;
-  }
-  100% {
-    box-shadow: 0 0 4px 0px #22d3ee;
-  }
-}
-
-.border-glow {
-  animation: glow-animation 5s linear infinite;
-}
-
 .box-shadow-big {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.9);
 }
@@ -43,22 +27,35 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.35);
 }
 
-.backdrop-blur {
-  backdrop-filter: blur(10px);
-}
-
-.border-gradient {
-  border-top: 3px solid;
-  border-bottom: 3px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, #22d3ee, #ff4aff);
-}
-
 .link-hover {
   transition: all ease-in-out 0.1s;
   &:hover {
     color: #2563eb; /* blue.600 */
   }
+}
+
+@keyframes spin-and-expand {
+  0% {
+    width: 600px;
+    height: 500px;
+    transform: rotate(0deg); /* Starting point of the rotation */
+  }
+  50% {
+    width: 700px;
+    height: 700px;
+  }
+  100% {
+    width: 600px;
+    height: 500px;
+    transform: rotate(360deg); /* Ending point, a full circle */
+  }
+}
+
+.spin-and-expand {
+  animation-name: spin-and-expand;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .background-gradient {

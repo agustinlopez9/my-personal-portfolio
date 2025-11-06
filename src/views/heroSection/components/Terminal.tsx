@@ -59,14 +59,14 @@ const Terminal = () => {
       }}
     >
       <Box
-        className="background-gradient"
+        className="background-gradient spin-and-expand"
         position="absolute"
         width="600px"
-        height="600px"
+        right="-10%"
         bottom="-50%"
         rounded="full"
-        zIndex={-1}
         filter="blur(300px)"
+        zIndex={-1}
       />
       <motion.div
         ref={ref}
@@ -77,7 +77,7 @@ const Terminal = () => {
           transform,
         }}
       >
-        <Box bg="blackAlpha.700" borderWidth="1px" borderColor="gray.800" lineHeight="1.75rem" width="550px" height="min-content" padding="2rem" rounded="xl">
+        <Box bg="blackAlpha.700" borderWidth="1px" borderColor="gray.800" _hover={{ borderColor: "blue.600/50" }} transition="all ease-in-out 0.2s" lineHeight="1.75rem" width="550px" height="min-content" padding="2rem" rounded="xl">
           <Text color="green.600">// Welcome to my portfolio </Text>
           <br />
             <Text>{`const myInfo =  {`}</Text>

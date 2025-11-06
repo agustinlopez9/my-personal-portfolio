@@ -15,6 +15,7 @@ const Intro = () => {
       <Flex gap="1rem" marginTop="2rem">
         <Link
           href="src/assets/resume.pdf"
+          target="_blank"
           background="green.400" 
           color="white"
           textDecoration="none"

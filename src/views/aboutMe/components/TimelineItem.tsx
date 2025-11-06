@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, List, Text, Timeline } from "@chakra-ui/react";
-import CustomTag from "./CustomTag";
+import CustomTag from "../../../components/common/CustomTag";
 
 interface TimelineItemProps {
   icon: React.ReactNode;
@@ -27,7 +27,7 @@ const TimelineItem = ({
         <Timeline.Separator />
         <Timeline.Indicator bg="blue.600">{icon}</Timeline.Indicator>
       </Timeline.Connector>
-      <Timeline.Content marginBottom="1rem" bg="gray.950/50" border="1px solid black" transition="all ease-in-out 0.15s" _hover={{ borderColor: "blue.600/50"}} rounded="xl" padding="1rem">
+      <Timeline.Content marginBottom="1rem" bg="gray.950/50" borderWidth="1px" borderColor="gray.800" transition="all ease-in-out 0.15s" _hover={{ borderColor: "blue.600/50"}} rounded="xl" padding="1rem">
         <Timeline.Description className="text-gradient" fontSize="sm" marginY="0.125rem">
           {date}
         </Timeline.Description>

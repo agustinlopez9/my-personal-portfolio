@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Timeline } from "@chakra-ui/react";
 import { MdWork } from "react-icons/md";
-import TimelineItem from "components/common/TimelineItem";
+import TimelineItem from "views/aboutMe/components/TimelineItem";
 
 const TimelineData = [
   {
