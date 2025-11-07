@@ -3,15 +3,25 @@ import { Box, Flex, Link, List } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <Box position="fixed" left="0" right="0" zIndex={11} bg="blackAlpha.900" borderBottomColor="gray.800" borderBottomWidth="1px">
+    <Box
+      position="fixed"
+      left="0"
+      right="0"
+      zIndex={11}
+      bg="blackAlpha.900"
+      borderBottomColor="gray.800"
+      borderBottomWidth="1px"
+    >
       <Box
-        maxWidth="1280px"
+        display="flex"
         mx="auto"
+        maxWidth="1280px"
+        minHeight="60px"
         paddingX="2rem"
         paddingY="0.75rem"
         zIndex={11111}
       >
-        <Flex justifyContent="space-between" alignItems="center">
+        <Flex justifyContent="space-between" alignItems="center" width="100%">
           <Flex alignItems="center">
             <Box borderRight="1px solid white" paddingRight={1}>
               <img src="src/assets/logo.png" alt="Logo" width="32" />

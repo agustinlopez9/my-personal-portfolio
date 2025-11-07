@@ -15,7 +15,7 @@ const MyBio = () => {
         </Heading>
       </Flex>
       <Flex alignItems="center" gap="5rem">
-        <Text textAlign="justify" textStyle="md" color="gray.300">
+        <Text textAlign="justify" fontSize="lg" color="gray.300">
           My journey began in 2020, since then I've been improving my skills and
           knowledge in both Front-end and Back-end libraries such as React,
           Node.js, and Ruby on Rails. My main goal is to deepen into the

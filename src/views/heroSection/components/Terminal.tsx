@@ -60,6 +60,7 @@ const Terminal = () => {
     >
       <Box
         className="background-gradient spin-and-expand"
+        opacity="15%"
         position="absolute"
         width="600px"
         right="-10%"
@@ -77,15 +78,51 @@ const Terminal = () => {
           transform,
         }}
       >
-        <Box bg="blackAlpha.700" borderWidth="1px" borderColor="gray.800" _hover={{ borderColor: "blue.600/50" }} transition="all ease-in-out 0.2s" lineHeight="1.75rem" width="550px" height="min-content" padding="2rem" rounded="xl">
+        <Box
+          className="slide-up"
+          opacity="0"
+          animationDelay="fast"
+          bg="blackAlpha.700"
+          borderWidth="1px"
+          borderColor="gray.800"
+          _hover={{ borderColor: "blue.600/50" }}
+          transition="all ease-in-out 0.2s"
+          lineHeight="1.75rem"
+          width="550px"
+          height="min-content"
+          fontSize="md"
+          padding="2rem"
+          rounded="xl"
+        >
           <Text color="green.600">// Welcome to my portfolio </Text>
           <br />
-            <Text>{`const myInfo =  {`}</Text>
-            <Text marginLeft="1rem">{`location: "Buenos Aires, Argentina" `}</Text>
-            <Text marginLeft="1rem">{`languages: ["Spanish", "English"]`}</Text>
-            <Text marginLeft="1rem">{`softSkills: ["Problem Solving", "Communication", "Teamwork", "Adaptability"], `}</Text>
-            <Text marginLeft="1rem">{`wantToLearn: ["Electron", "React Native"] `}</Text>
-            <Text>{`}`}</Text>
+          <Text>
+            <span className="code-color-1">const</span>
+            <span className="code-color-2"> myInfo </span> =
+            <span className="code-color-5">{` {`}</span>
+          </Text>
+          <Text marginLeft="1rem">
+            <span className="code-color-3">location:</span>
+            <span className="code-color-4"> "Buenos Aires, Argentina",</span>
+          </Text>
+          <Text marginLeft="1rem">
+            <span className="code-color-3">languages:</span>
+            <span className="code-color-4"> ["Spanish", "English"]</span>,
+          </Text>
+          <Text marginLeft="1rem">
+            <span className="code-color-3">softSkills:</span>
+            <span className="code-color-4">
+              {" "}
+              ["Problem Solving", "Communication", "Teamwork", "Adaptability"],
+            </span>
+          </Text>
+          <Text marginLeft="1rem">
+            <span className="code-color-3">wantToLearn:</span>
+            <span className="code-color-4"> ["Electron", "React Native"]</span>
+          </Text>
+          <Text>
+            <span className="code-color-5">{`}`}</span>
+          </Text>
         </Box>
       </motion.div>
     </Box>

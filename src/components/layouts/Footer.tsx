@@ -3,7 +3,7 @@ import { Box, Link, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <Box paddingY="4rem" textAlign="center">
+    <Box paddingTop="6rem" paddingBottom="4rem" textAlign="center">
       <Text fontSize="sm">
         Do you like my website? See the code{" "}
         <Link

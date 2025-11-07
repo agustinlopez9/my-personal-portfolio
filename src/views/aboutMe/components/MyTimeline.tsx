@@ -10,12 +10,12 @@ const TimelineData = [
     company: "Sinaptia",
     date: "March 2022 - Present",
     description:
-      "I contributed to various projects in both Front-end and Back-end sides, some of my tasks included",
+      "I developed full-stack solutions across multiple projects, delivering scalable applications on both frontend and backend. My key achievements included:",
     tasks: [
-      "Designing an admin dashboard panel for managing user roles and permissions, built with React, Node.js and AWS using Lambda functions.",
-      "Building endpoints for a Node.js RESTful API.",
-      "Helping in maintenance of a Ruby on Rails application.",
-      "Creating new features for a better user experience, fixing bugs and writing tests in a React.js application.",
+      "Designed and built an admin dashboard for user role management and permissions, using React, Node.js, and AWS Lambda functions.",
+      "Developed robust RESTful API endpoints in Node.js, ensuring seamless data flow and system integration.",
+      "Maintained an e-commerce Ruby on Rails application and improved website performance by fixing bugs, refactoring code, and optimizing SQL queries.",
+      "Created features that enhanced user experience, resolved complex bugs, and implemented comprehensive testing strategies in a React.js application.",
     ],
     tools: [
       "React",
@@ -38,8 +38,7 @@ const TimelineData = [
     title: "Front-end developer",
     company: "HackCTF",
     date: "December 2020 - March 2022",
-    description:
-      "I helped develop a platform for learning and practicing cybersecurity skills through different hacking challenges.",
+    description: `I designed and developed a platform for learning and practicing cybersecurity skills through interactive hacking challenges. The platform was showcased at the EkoParty cybersecurity conference, where it won both the "Best Challenge" and "Revelation" awards.`,
     tools: ["React", "JavaScript", "Tailwind CSS", "Firebase"],
   },
 ];

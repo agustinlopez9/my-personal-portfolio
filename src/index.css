@@ -19,20 +19,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.box-shadow-big {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.9);
-}
-
-.box-shadow-small {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.35);
-}
-
 .link-hover {
   transition: all ease-in-out 0.1s;
   &:hover {
     color: #2563eb; /* blue.600 */
   }
 }
+
+/* Animations */
 
 @keyframes spin-and-expand {
   0% {
@@ -52,19 +46,70 @@ body {
 }
 
 .spin-and-expand {
-  animation-name: spin-and-expand;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: spin-and-expand 10s linear infinite;
 }
+
+@keyframes blinking-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-animation {
+  animation: blinking-animation 1.5s infinite;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  } 
+}
+
+.slide-up {
+  animation: slide-up 0.5s ease-in-out forwards;
+}
+
+
+/* Gradients */
 
 .background-gradient {
   background: -webkit-linear-gradient(45deg, #2563eb, #4ade80 60%); /* blue.600 to green.400 */
-  opacity: 15%;
 }
 
 .text-gradient {
   background: -webkit-linear-gradient(45deg, #2563eb, #4ade80 60%); /* blue.600 to green.400 */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Code block styles */
+.code-color-1 {
+  color: #2563eb; /* green.600 */
+}
+
+.code-color-2 {
+  color: #fef08a; /* yellow.200 */
+}
+
+.code-color-3 {
+  color: #a3cfff; /* blue.300 */
+}
+
+.code-color-4 {
+  color: #f87171; /* red.400 */
+}
+
+.code-color-5 {
+  color: #c084fc; /* purple.400 */
 }

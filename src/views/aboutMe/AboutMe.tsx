@@ -13,7 +13,7 @@ const AboutMe = () => {
       alignItems="center"
       maxWidth="1280px"
       padding="2rem"
-      margin="auto"
+      marginX="auto"
     >
       <MyBio />
       <MyTimeline />

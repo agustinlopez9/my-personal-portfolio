@@ -1,20 +1,32 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import TabsSection from "./components/TabsSection";
+import TabsContent from "./components/TabsContent";
+import { tabEntries } from "./interfaces";
 
 const ProjectsSection = () => {
   return (
-    <Flex height="600px" justifyContent="center">
-      <Box p={4} bg="gray.800" width="280px">
-        <Heading as="h1" size="xl" mb={4}>
-          Projects
+    <Flex
+      id="projects"
+      direction="column"
+      maxWidth="1280px"
+      padding="2rem"
+      margin="auto"
+    >
+      <Box marginBottom="3rem" marginTop="4rem">
+        <Heading fontSize="5xl" fontWeight="bold">
+          Featured Projects
         </Heading>
+        <Text fontSize="lg" color="gray.300" marginY="2rem">
+          Explore my latest work across frontend, backend, design, and coding
+          challenges
+        </Text>
       </Box>
-      <Box bg="gray.200" width="1000px">
-        <Heading as="h2" size="lg" mb={4}>
-          My Projects
-        </Heading>
-        <Text>Here are some of the projects I've worked on:</Text>
-      </Box>
+      <TabsSection>
+        {tabEntries.map((category, index) => (
+          <TabsContent key={index} category={category} />
+        ))}
+      </TabsSection>
     </Flex>
   );
 };
