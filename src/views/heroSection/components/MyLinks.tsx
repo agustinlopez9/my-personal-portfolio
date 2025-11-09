@@ -20,9 +20,14 @@ const links = [
 
 const MyLinks = () => {
   return (
-    <Flex marginTop="2rem" gap="2rem" justifyContent="start">
+    <Flex
+      marginTop="2rem"
+      gap="2rem"
+      justifyContent={{ base: "start", md: "center", xl: "start" }}
+    >
       {links.map((link) => (
         <Link
+          key={link.url}
           href={link.url}
           target="_blank"
           className="link-hover"

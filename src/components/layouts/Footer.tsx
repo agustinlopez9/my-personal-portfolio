@@ -4,7 +4,7 @@ import { Box, Link, Text } from "@chakra-ui/react";
 export default function Footer() {
   return (
     <Box paddingTop="6rem" paddingBottom="4rem" textAlign="center">
-      <Text fontSize="sm">
+      <Text fontSize={{ base: "xs", md: "sm" }} color="gray.300">
         Do you like my website? See the code{" "}
         <Link
           href="https://github.com/agustinlopez9/my-personal-portfolio"

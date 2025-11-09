@@ -52,12 +52,16 @@ const TimelineItem = ({
         >
           {company}
         </Timeline.Description>
-        <Text fontSize="md" color="gray.300" marginBottom="0.5rem">
+        <Text
+          fontSize={{ base: "sm", md: "md" }}
+          color="gray.300"
+          marginBottom="0.5rem"
+        >
           {description}
         </Text>
         {!!tasks.length && (
           <List.Root
-            fontSize="md"
+            fontSize={{ base: "sm", md: "md" }}
             color="gray.300"
             paddingInlineStart="1rem"
             marginBottom="1rem"

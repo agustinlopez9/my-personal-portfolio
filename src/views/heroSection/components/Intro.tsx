@@ -4,17 +4,27 @@ import MyLinks from "./MyLinks";
 
 const Intro = () => {
   return (
-    <Flex className="slide-up" maxW="600px" direction="column">
+    <Flex
+      className="slide-up"
+      textAlign={{ base: "left", md: "center", xl: "left" }}
+      margin="1rem"
+      maxW="600px"
+      direction="column"
+    >
       <Text textStyle="md">Hello! 👋 My name is</Text>
       <Heading className="text-gradient" size="5xl" marginY="1rem">
         Agustin Lopez<span className="blinking-animation">_</span>
       </Heading>
-      <Text textStyle="lg" color="gray.300">
+      <Text fontSize={{ base: "md", md: "lg" }} color="gray.300">
         I'm a 25 years old Full-Stack developer specialized in the Front-end,
         and with a passion for creating intuitive user interfaces and dynamic
         designs.
       </Text>
-      <Flex gap="1rem" marginTop="2rem">
+      <Flex
+        gap="1rem"
+        marginTop="2rem"
+        justifyContent={{ base: "start", md: "center", xl: "start" }}
+      >
         <Link
           href="src/assets/resume.pdf"
           target="_blank"

@@ -1,31 +1,50 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { Separator, Tabs } from "@chakra-ui/react";
 import { Category, tabEntries } from "../interfaces";
+import TabsContent from "./TabsContent";
 
-const TabsSection = ({ children }: PropsWithChildren) => {
+const TabsSection = () => {
   return (
     <Tabs.Root defaultValue="frontend" variant="subtle" width="100%">
-      <Tabs.List gap="1rem" borderColor="gray.800">
+      <Tabs.List
+        flexWrap="wrap"
+        gap="1rem"
+        borderColor="gray.800"
+        justifyContent={{ base: "center", md: "flex-start" }}
+      >
         {tabEntries.map((tab, index) => (
           <Tabs.Trigger
             key={index}
-            fontSize="lg"
+            fontSize={{ base: "md", md: "lg" }}
             color="gray.300"
-            _hover={{ bg: "gray.900/50", color: "white" }}
-            _selected={{ bg: "green.400", color: "black" }}
+            border="2px solid transparent"
+            _hover={{
+              bg: "gray.900/50",
+              color: "white",
+            }}
+            _selected={{
+              bg: "green.400",
+              color: "black",
+              fontWeight: "semibold",
+            }}
+            _focus={{
+              borderColor: "green.400/50",
+              outline: "none",
+            }}
             rounded="xl"
-            padding="1rem"
-            paddingY="1.5rem"
-            transition="all ease-in-out 0.15s"
+            padding="1rem 1.5rem"
+            paddingY="1rem"
+            transition="all ease-in-out 0.2s"
             value={tab}
           >
             {Category[tab]}
           </Tabs.Trigger>
         ))}
-        <Tabs.Indicator rounded="xl" bg="green.400" />
       </Tabs.List>
       <Separator marginY="1rem" />
-      {children}
+      {tabEntries.map((category) => (
+        <TabsContent key={category} category={category} />
+      ))}
     </Tabs.Root>
   );
 };

@@ -50,6 +50,7 @@ const Terminal = () => {
 
   return (
     <Box
+      display={{ base: "none", md: "block" }}
       position="relative"
       gap="4rem"
       maxWidth="600px"
@@ -57,17 +58,6 @@ const Terminal = () => {
         perspective: "1000px",
       }}
     >
-      <Box
-        className="background-gradient spin-and-expand"
-        opacity="15%"
-        position="absolute"
-        width="600px"
-        right="-10%"
-        bottom="-50%"
-        rounded="full"
-        filter="blur(300px)"
-        zIndex={-1}
-      />
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}

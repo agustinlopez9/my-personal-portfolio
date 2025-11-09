@@ -16,7 +16,7 @@ const CustomTag = ({ name, ...props }: CustomTagProps) => {
       rounded="full"
       {...props}
     >
-      <Tag.Label fontSize="sm">{name}</Tag.Label>
+      <Tag.Label fontSize={{ base: "xs", md: "sm" }}>{name}</Tag.Label>
     </Tag.Root>
   );
 };

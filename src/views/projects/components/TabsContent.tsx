@@ -17,7 +17,12 @@ const TabsContent = ({ category }: TabsContentProps) => {
   return (
     <Tabs.Content className="slide-up" value={category}>
       {filteredProjects.length ? (
-        <Flex gap="2rem" marginTop="2rem">
+        <Flex
+          justifyContent="center"
+          flexWrap="wrap"
+          gap="2rem"
+          marginTop="2rem"
+        >
           {filteredProjects.map((project, index) => (
             <ProjectCard
               key={index}

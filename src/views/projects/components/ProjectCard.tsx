@@ -22,6 +22,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Card.Root
+      minW="xs"
       maxW="sm"
       bg="gray.950/50"
       borderColor="gray.900"
@@ -52,7 +53,7 @@ const ProjectCard = ({
         <Card.Title className="card-title" transition="all ease-in-out 0.2s">
           {title}
         </Card.Title>
-        <Card.Description color="gray.300" fontSize="md">
+        <Card.Description color="gray.300" fontSize={{ base: "sm", md: "md" }}>
           {shortBio}
         </Card.Description>
         <Flex gap="0.5rem" flexWrap="wrap">

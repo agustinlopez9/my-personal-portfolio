@@ -12,7 +12,7 @@ const AboutMe = () => {
       flexDirection="column"
       alignItems="center"
       maxWidth="1280px"
-      padding="2rem"
+      padding={{ base: "0.5rem", md: "2rem" }}
       marginX="auto"
     >
       <MyBio />
