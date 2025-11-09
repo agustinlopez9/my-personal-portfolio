@@ -15,15 +15,10 @@ const TabsContent = ({ category }: TabsContentProps) => {
   );
 
   return (
-    <Tabs.Content value={category}>
-      <Flex
-        className="slide-up"
-        justifyContent="center"
-        gap="2rem"
-        marginTop="2rem"
-      >
-        {filteredProjects.length ? (
-          filteredProjects.map((project, index) => (
+    <Tabs.Content className="slide-up" value={category}>
+      {filteredProjects.length ? (
+        <Flex gap="2rem" marginTop="2rem">
+          {filteredProjects.map((project, index) => (
             <ProjectCard
               key={index}
               image={project.image}
@@ -33,11 +28,11 @@ const TabsContent = ({ category }: TabsContentProps) => {
               githubRepo={project.githubRepo}
               website={project.website}
             />
-          ))
-        ) : (
-          <NoResults />
-        )}
-      </Flex>
+          ))}
+        </Flex>
+      ) : (
+        <NoResults />
+      )}
     </Tabs.Content>
   );
 };

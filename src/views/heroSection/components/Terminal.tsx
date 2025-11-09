@@ -44,7 +44,6 @@ const Terminal = () => {
   };
 
   const handleMouseLeave = () => {
-    // Reset rotations when mouse leaves
     x.set(0);
     y.set(0);
   };
@@ -84,7 +83,7 @@ const Terminal = () => {
           animationDelay="fast"
           bg="blackAlpha.700"
           borderWidth="1px"
-          borderColor="gray.800"
+          borderColor="gray.900"
           _hover={{ borderColor: "blue.600/50" }}
           transition="all ease-in-out 0.2s"
           lineHeight="1.75rem"

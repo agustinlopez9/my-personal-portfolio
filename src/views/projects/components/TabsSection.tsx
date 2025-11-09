@@ -11,10 +11,12 @@ const TabsSection = ({ children }: PropsWithChildren) => {
             key={index}
             fontSize="lg"
             color="gray.300"
+            _hover={{ bg: "gray.900/50", color: "white" }}
             _selected={{ bg: "green.400", color: "black" }}
             rounded="xl"
             padding="1rem"
             paddingY="1.5rem"
+            transition="all ease-in-out 0.15s"
             value={tab}
           >
             {Category[tab]}

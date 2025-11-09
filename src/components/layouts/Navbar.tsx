@@ -9,7 +9,7 @@ const Navbar = () => {
       right="0"
       zIndex={11}
       bg="blackAlpha.900"
-      borderBottomColor="gray.800"
+      borderBottomColor="gray.900"
       borderBottomWidth="1px"
     >
       <Box
