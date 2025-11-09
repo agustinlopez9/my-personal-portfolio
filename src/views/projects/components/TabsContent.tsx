@@ -1,6 +1,7 @@
 import React from "react";
-import { Tabs, Box, Heading, Text } from "@chakra-ui/react";
+import { Tabs, Flex } from "@chakra-ui/react";
 import NoResults from "./NoResults";
+import ProjectCard from "./ProjectCard";
 import { projects } from "../mockData";
 import { Category, TabName } from "../interfaces";
 
@@ -15,27 +16,28 @@ const TabsContent = ({ category }: TabsContentProps) => {
 
   return (
     <Tabs.Content value={category}>
-      {filteredProjects.length ? (
-        filteredProjects.map((project, index) => (
-          <Box
-            key={index}
-            bg="gray.800"
-            padding="1.5rem"
-            borderRadius="md"
-            marginBottom="1.5rem"
-          >
-            <Heading fontSize="2xl" marginBottom="0.5rem">
-              {project.title}
-            </Heading>
-            <Text color="gray.300">{project.description}</Text>
-            <Text color="green.400" marginTop="0.5rem">
-              Technologies: {project.techStack.join(", ")}
-            </Text>
-          </Box>
-        ))
-      ) : (
-        <NoResults />
-      )}
+      <Flex
+        className="slide-up"
+        justifyContent="center"
+        gap="2rem"
+        marginTop="2rem"
+      >
+        {filteredProjects.length ? (
+          filteredProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              image={project.image}
+              title={project.title}
+              shortBio={project.shortBio}
+              techStack={project.techStack}
+              githubRepo={project.githubRepo}
+              website={project.website}
+            />
+          ))
+        ) : (
+          <NoResults />
+        )}
+      </Flex>
     </Tabs.Content>
   );
 };

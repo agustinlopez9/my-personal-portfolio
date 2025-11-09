@@ -31,7 +31,8 @@ export const projects: Project[] = [
       "React Query",
       "Zustand",
     ],
-    image: "/images/ecommerce-dashboard.jpg",
+    image:
+      "https://images.pexels.com/photos/34155611/pexels-photo-34155611.jpeg",
     category: Category.frontend,
   },
   {
@@ -51,7 +52,8 @@ export const projects: Project[] = [
       "Context API",
       "Framer Motion",
     ],
-    image: "/images/social-media-app.jpg",
+    image:
+      "https://images.pexels.com/photos/33359035/pexels-photo-33359035.jpeg",
     category: Category.frontend,
   },
   {
@@ -71,7 +73,8 @@ export const projects: Project[] = [
       "Mapbox GL",
       "PWA",
     ],
-    image: "/images/weather-app.jpg",
+    image:
+      "https://images.pexels.com/photos/34192189/pexels-photo-34192189.jpeg",
     category: Category.frontend,
   },
 
