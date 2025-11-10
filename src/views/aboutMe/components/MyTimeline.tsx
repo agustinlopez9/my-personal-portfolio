@@ -10,12 +10,12 @@ const TimelineData = [
     company: "Sinaptia",
     date: "March 2022 - Present",
     description:
-      "I developed full-stack solutions across multiple projects, delivering scalable applications on both frontend and backend. My key achievements included:",
+      "I have worked on multiple projects, contributing to both front-end and back-end development. My key achievements included:",
     tasks: [
       "Designed and built an admin dashboard for user role management and permissions, using React, Node.js, and AWS Lambda functions.",
-      "Developed robust RESTful API endpoints in Node.js, ensuring seamless data flow and system integration.",
-      "Maintained an e-commerce Ruby on Rails application and improved website performance by fixing bugs, refactoring code, and optimizing SQL queries.",
-      "Created features that enhanced user experience, resolved complex bugs, and implemented comprehensive testing strategies in a React.js application.",
+      "Developed and maintained RESTful API endpoints in Node.js, integrating them with existing microservices.",
+      "Enhanced an e-commerce Ruby on Rails application by optimizing SQL queries, refactoring legacy code, and resolving performance bottlenecks, resulting in faster page loads and improved scalability.",
+      "Delivered new features that improved user experience, debugged complex front-end issues, and wrote automated tests in a React.js application.",
     ],
     tools: [
       "React",
@@ -28,8 +28,8 @@ const TimelineData = [
       "Express",
       "GraphQL",
       "PostgreSQL",
-      "Jest",
       "Cypress",
+      "Jest",
       "AWS",
     ],
   },
