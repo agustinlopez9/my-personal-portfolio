@@ -22,6 +22,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Card.Root
+      width="full"
       minW="xs"
       maxW="sm"
       bg="gray.950/50"
