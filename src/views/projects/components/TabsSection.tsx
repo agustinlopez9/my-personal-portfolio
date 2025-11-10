@@ -1,11 +1,11 @@
 import React from "react";
 import { Separator, Tabs } from "@chakra-ui/react";
-import { Category, tabEntries } from "../interfaces";
 import TabsContent from "./TabsContent";
+import { Category, tabEntries } from "../interfaces";
 
 const TabsSection = () => {
   return (
-    <Tabs.Root defaultValue="frontend" variant="subtle" width="100%">
+    <Tabs.Root defaultValue={tabEntries[0]} variant="subtle" width="100%">
       <Tabs.List
         flexWrap="wrap"
         gap="1rem"

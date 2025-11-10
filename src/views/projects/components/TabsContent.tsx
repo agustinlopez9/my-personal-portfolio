@@ -1,7 +1,7 @@
 import React from "react";
-import { Tabs, Flex } from "@chakra-ui/react";
-import NoResults from "./NoResults";
+import { Flex, Tabs } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
+import NoResults from "./NoResults";
 import { projects } from "../mockData";
 import { Category, TabName } from "../interfaces";
 
@@ -15,9 +15,10 @@ const TabsContent = ({ category }: TabsContentProps) => {
   );
 
   return (
-    <Tabs.Content className="slide-up" value={category}>
+    <Tabs.Content value={category}>
       {filteredProjects.length ? (
         <Flex
+          className="slide-up"
           justifyContent="center"
           flexWrap="wrap"
           gap="2rem"
