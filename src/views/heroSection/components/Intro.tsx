@@ -1,8 +1,23 @@
 import React from "react";
-import { Flex, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import MyLinks from "./MyLinks";
 
 const Intro = () => {
+  const textFragments = [
+    "I'm a",
+    "25 years old",
+    "Full-Stack developer",
+    "specialized",
+    "in the Front-end,",
+    "and with a passion",
+    "for creating",
+    "intuitive",
+    "user",
+    "interfaces",
+    "and dynamic",
+    "designs."
+  ];
+
   return (
     <Flex
       className="slide-up"
@@ -16,9 +31,16 @@ const Intro = () => {
         Agustin Lopez<span className="blinking-animation">_</span>
       </Heading>
       <Text fontSize={{ base: "md", md: "lg" }} color="gray.300">
-        I'm a 25 years old Full-Stack developer specialized in the Front-end,
-        and with a passion for creating intuitive user interfaces and dynamic
-        designs.
+        {textFragments.map((fragment, index) => (
+            <Box
+              as="span"
+              className="typing-text"
+              fontSize="md"
+              animationDelay={`${index * 0.2}s`}
+            >
+              {fragment}{index < textFragments.length - 1 && " "}
+            </Box>
+        ))}
       </Text>
       <Flex
         gap="1rem"
