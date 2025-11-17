@@ -24,7 +24,7 @@ const ProjectCard = ({
     <Card.Root
       width="full"
       minW="xs"
-      maxW="sm"
+      maxW={{base: "xs", lg: "sm"}}
       bg="gray.950/50"
       borderColor="gray.900"
       _hover={{

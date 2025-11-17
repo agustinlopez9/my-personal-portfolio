@@ -77,9 +77,9 @@ const Terminal = () => {
           _hover={{ borderColor: "blue.600/50" }}
           transition="all ease-in-out 0.2s"
           lineHeight="1.75rem"
-          width="550px"
+          width={{ base: "500px", xl: "550px" }}
           height="min-content"
-          fontSize="md"
+          fontSize={{ base: "sm", xl: "md" }}
           padding="2rem"
           rounded="xl"
         >

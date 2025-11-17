@@ -6,7 +6,7 @@ const MyBio = () => {
     <Box textAlign="center" marginY="4rem" zIndex={1}>
       <Heading
         textAlign="left"
-        fontSize={{ base: "4xl", md: "5xl" }}
+        fontSize={{ base: "4xl", xl: "5xl" }}
         fontWeight="bold"
         marginBottom="2rem"
         paddingBottom={{ base: "2rem", lg: "0.5rem" }}
@@ -20,7 +20,7 @@ const MyBio = () => {
       >
         <Text
           textAlign="justify"
-          fontSize={{ base: "sm", md: "md", lg: "lg" }}
+          fontSize={{ base: "sm", sm: "md", xl: "lg" }}
           color="gray.300"
         >
           My journey began in 2020, since then I've been improving my skills and

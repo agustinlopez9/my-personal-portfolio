@@ -15,7 +15,7 @@ const Intro = () => {
     "user",
     "interfaces",
     "and dynamic",
-    "designs."
+    "designs.",
   ];
 
   return (
@@ -30,18 +30,20 @@ const Intro = () => {
       <Heading className="text-gradient" size="5xl" marginY="1rem">
         Agustin Lopez<span className="blinking-animation">_</span>
       </Heading>
-      <Text fontSize={{ base: "md", md: "lg" }} color="gray.300">
+      <Box>
         {textFragments.map((fragment, index) => (
-            <Box
-              as="span"
-              className="typing-text"
-              fontSize="md"
-              animationDelay={`${index * 0.2}s`}
-            >
-              {fragment}{index < textFragments.length - 1 && " "}
-            </Box>
+          <Box
+            as="span"
+            className="typing-text"
+            fontSize={{ base: "md", xl: "lg" }}
+            color="gray.300"
+            animationDelay={`${index * 0.2}s`}
+          >
+            {fragment}
+            {index < textFragments.length - 1 && " "}
+          </Box>
         ))}
-      </Text>
+      </Box>
       <Flex
         gap="1rem"
         marginTop="2rem"
