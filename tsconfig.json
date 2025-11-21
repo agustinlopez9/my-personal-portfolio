@@ -3,13 +3,27 @@
   "exclude": ["node_modules", "dist", "build", "coverage", "public"],
   "compilerOptions": {
     "baseUrl": "src",
-    "target": "es6",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strict": true,
     "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/*": ["./*"],
+      "components/*": ["./components/*"],
+      "views/*": ["./views/*"],
+      "hooks/*": ["./hooks/*"],
+      "context/*": ["./context/*"],
+      "theme/*": ["./theme/*"]
+    }
   }
 }
