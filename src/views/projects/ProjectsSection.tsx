@@ -13,16 +13,16 @@ const ProjectsSection = () => {
     >
       <Box marginBottom="3rem" marginTop="4rem">
         <Heading
-          fontSize={{ base: "4xl", xl: "5xl" }}
+          fontSize={{ base: "3xl", lg: "4xl" }}
           fontWeight="bold"
           lineHeight="shorter"
         >
           Featured Projects
         </Heading>
         <Text
-          fontSize={{ base: "md", xl: "lg" }}
           color="gray.300"
-          marginY="2rem"
+          fontSize={{ base: "sm", lg: "md" }}
+          marginY={{ base: "1rem", lg: "1.5rem" }}
         >
           Explore my latest work across frontend, backend, design, and coding
           challenges

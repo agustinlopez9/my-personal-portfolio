@@ -15,7 +15,7 @@ const TabsSection = () => {
         {tabEntries.map((tab, index) => (
           <Tabs.Trigger
             key={index}
-            fontSize={{ base: "md", xl: "lg" }}
+            fontSize={{ base: "sm", lg: "md" }}
             color="gray.300"
             border="2px solid transparent"
             _hover={{
@@ -32,8 +32,7 @@ const TabsSection = () => {
               outline: "none",
             }}
             rounded="xl"
-            padding="1rem 1.5rem"
-            paddingY="1rem"
+            padding="1rem"
             transition="all ease-in-out 0.2s"
             value={tab}
           >

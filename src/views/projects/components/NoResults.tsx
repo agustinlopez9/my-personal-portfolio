@@ -16,21 +16,16 @@ const NoResults = () => {
       <Box bg="gray.800" borderRadius="full" padding="2rem" opacity={0.8}>
         <FaRocket size={48} color="#4ADE80" />
       </Box>
-
       <Box>
         <Text
-          fontSize={{ base: "xl", md: "2xl" }}
+          fontSize="xl"
           fontWeight="bold"
           color="gray.200"
           marginBottom="0.5rem"
         >
           Coming Soon
         </Text>
-        <Text
-          fontSize={{ base: "md", md: "lg" }}
-          color="gray.400"
-          maxWidth="400px"
-        >
+        <Text fontSize="md" color="gray.400" maxWidth="400px">
           Exciting projects are on their way! Check back soon for new
           developments.
         </Text>

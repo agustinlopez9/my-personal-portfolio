@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Tabs } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import NoResults from "./NoResults";
-import { projects } from "../mockData";
+import { projects } from "../data";
 import { Category, TabName } from "../interfaces";
 
 interface TabsContentProps {

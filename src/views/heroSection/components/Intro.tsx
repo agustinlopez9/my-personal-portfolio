@@ -35,7 +35,7 @@ const Intro = () => {
           <Box
             as="span"
             className="typing-text"
-            fontSize={{ base: "md", xl: "lg" }}
+            fontSize={{ base: "md" }}
             color="gray.300"
             animationDelay={`${index * 0.2}s`}
           >

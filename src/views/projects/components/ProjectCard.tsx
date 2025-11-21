@@ -24,7 +24,7 @@ const ProjectCard = ({
     <Card.Root
       width="full"
       minW="xs"
-      maxW={{base: "xs", lg: "sm"}}
+      maxW={{ base: "xs", lg: "sm" }}
       bg="gray.950/50"
       borderColor="gray.900"
       _hover={{
@@ -42,19 +42,25 @@ const ProjectCard = ({
       rounded="xl"
       cursor="pointer"
     >
-      <Image
-        src={image}
-        alt={`${title} project screenshot`}
-        className="card-image"
-        minHeight="200px"
-        transition="all ease-in-out 0.2s"
-        roundedTop="xl"
-      />
+      <Card.Header overflow="hidden">
+        <Image
+          src={image}
+          alt={`${title} project screenshot`}
+          className="card-image"
+          minHeight="200px"
+          transition="all ease-in-out 0.2s"
+          roundedTop="xl"
+        />
+      </Card.Header>
       <Card.Body padding="1rem" gap="1rem">
-        <Card.Title className="card-title" transition="all ease-in-out 0.2s">
+        <Card.Title
+          className="card-title"
+          fontSize="md"
+          transition="all ease-in-out 0.2s"
+        >
           {title}
         </Card.Title>
-        <Card.Description color="gray.300" fontSize={{ base: "sm", md: "md" }}>
+        <Card.Description color="gray.300" fontSize="sm">
           {shortBio}
         </Card.Description>
         <Flex gap="0.5rem" flexWrap="wrap">

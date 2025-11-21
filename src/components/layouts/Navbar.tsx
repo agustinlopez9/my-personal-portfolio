@@ -39,6 +39,7 @@ const Navbar = () => {
             display="flex"
             flexDirection="row"
             gap={{ base: "1.25rem", md: "2rem" }}
+            fontSize={{ base: "sm", lg: "md" }}
             unstyled
           >
             <List.Item>
