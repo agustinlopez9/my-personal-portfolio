@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ChakraProvider, createSystem, defaultConfig } from "@chakra-ui/react";
 import App from "./App";
