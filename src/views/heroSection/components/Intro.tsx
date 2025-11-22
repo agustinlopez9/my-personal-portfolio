@@ -50,7 +50,7 @@ const Intro = () => {
         justifyContent={{ base: "start", md: "center", xl: "start" }}
       >
         <Link
-          href="src/assets/resume.pdf"
+          href={`${import.meta.env.BASE_URL}/Lopez Piceda Agustin - CV.pdf`}
           target="_blank"
           bg="green.400"
           color="white"

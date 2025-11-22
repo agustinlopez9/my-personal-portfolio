@@ -30,7 +30,7 @@ const MyBio = () => {
           user-friendly applications.
         </Text>
         <Image
-          src="src/assets/profile.jpeg"
+          src={`${import.meta.env.BASE_URL}/profile.jpeg`}
           alt="profile.jpeg"
           width="250px"
           pointerEvents="none"

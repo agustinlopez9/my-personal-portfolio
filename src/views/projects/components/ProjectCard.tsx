@@ -44,7 +44,7 @@ const ProjectCard = ({
     >
       <Card.Header overflow="hidden">
         <Image
-          src={image}
+          src={`${import.meta.env.BASE_URL}/${image}`}
           alt={`${title} project screenshot`}
           className="card-image"
           minHeight="200px"
