@@ -62,6 +62,7 @@ body {
 }
 
 .blinking-animation {
+  color: #4ade80; /* green.400 - matches the gradient end color */
   -webkit-animation: blinking-animation 1.5s infinite; /* Safari/Chrome */
   -moz-animation: blinking-animation 1.5s infinite; /* Firefox */
   -o-animation: blinking-animation 1.5s infinite; /* Opera */
@@ -114,7 +115,7 @@ body {
   background: -webkit-linear-gradient(
     45deg,
     #2563eb,
-    #4ade80 60%
+    #4ade80 80%
   ); /* blue.600 to green.400 */
   -webkit-background-clip: text;
   background-clip: text;

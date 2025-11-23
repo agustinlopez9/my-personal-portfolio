@@ -26,9 +26,10 @@ const Intro = () => {
       maxW="600px"
       direction="column"
     >
-      <Text fontSize={{ base: "sm", lg: "md"}}>Hello! 👋 My name is</Text>
-      <Heading className="text-gradient" size={{ base: "4xl", lg: "5xl"}} marginY="1rem">
-        Agustin Lopez<span className="blinking-animation">_</span>
+      <Text fontSize={{ base: "sm", lg: "md" }}>Hello! 👋 My name is</Text>
+      <Heading size={{ base: "4xl", lg: "5xl" }} marginY="1rem">
+        <span className="text-gradient">Agustin Lopez</span>
+        <span className="blinking-animation">_</span>
       </Heading>
       <Box>
         {textFragments.map((fragment, index) => (

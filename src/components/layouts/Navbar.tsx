@@ -27,7 +27,11 @@ const Navbar = () => {
               borderRight={{ base: "none", md: "1px solid white" }}
               paddingRight={1}
             >
-              <img src={`${import.meta.env.BASE_URL}/logo.png`} alt="Logo" width="32" />
+              <img
+                src={`${import.meta.env.BASE_URL}/logo.png`}
+                alt="Logo"
+                width="32"
+              />
             </Box>
             <Box display={{ base: "none", md: "block" }} paddingLeft={2}>
               <Link href="/" color="white" textDecoration="none">
