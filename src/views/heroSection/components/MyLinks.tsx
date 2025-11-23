@@ -6,15 +6,15 @@ import { MdEmail } from "react-icons/md";
 const links = [
   {
     url: "https://github.com/agustinlopez9",
-    icon: <FaGithub size="32px" />,
+    icon: <FaGithub size="28px" />,
   },
   {
     url: "https://www.linkedin.com/in/agustin-lopez-piceda-b556b41b8/",
-    icon: <FaLinkedin size="32px" />,
+    icon: <FaLinkedin size="28px" />,
   },
   {
     url: "mailto:fernandopiceda99@gmail.com",
-    icon: <MdEmail size="32px" />,
+    icon: <MdEmail size="28px" />,
   },
 ];
 

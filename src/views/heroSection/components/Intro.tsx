@@ -26,8 +26,8 @@ const Intro = () => {
       maxW="600px"
       direction="column"
     >
-      <Text textStyle="md">Hello! 👋 My name is</Text>
-      <Heading className="text-gradient" size="5xl" marginY="1rem">
+      <Text fontSize={{ base: "sm", lg: "md"}}>Hello! 👋 My name is</Text>
+      <Heading className="text-gradient" size={{ base: "4xl", lg: "5xl"}} marginY="1rem">
         Agustin Lopez<span className="blinking-animation">_</span>
       </Heading>
       <Box>
@@ -35,7 +35,7 @@ const Intro = () => {
           <Box
             as="span"
             className="typing-text"
-            fontSize={{ base: "md" }}
+            fontSize={{ base: "sm", lg: "md" }}
             color="gray.300"
             animationDelay={`${index * 0.2}s`}
           >
@@ -56,7 +56,7 @@ const Intro = () => {
           color="white"
           textDecoration="none"
           transition="all ease-in-out 0.15s"
-          fontSize="md"
+          fontSize={{ base: "sm", lg: "md" }}
           fontWeight="bold"
           paddingX="1.25rem"
           paddingY="0.5rem"
@@ -71,7 +71,7 @@ const Intro = () => {
           borderWidth="0.125rem"
           borderColor="blue.600"
           color="blue.600"
-          fontSize="md"
+          fontSize={{ base: "sm", lg: "md" }}
           fontWeight="bold"
           textDecoration="none"
           transition="all ease-in-out 0.15s"
