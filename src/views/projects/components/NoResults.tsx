@@ -18,14 +18,18 @@ const NoResults = () => {
       </Box>
       <Box>
         <Text
-          fontSize="xl"
+          fontSize={{ base: "lg", md: "xl" }}
           fontWeight="bold"
           color="gray.200"
           marginBottom="0.5rem"
         >
           Coming Soon
         </Text>
-        <Text fontSize="md" color="gray.400" maxWidth="400px">
+        <Text
+          fontSize={{ base: "sm", md: "md" }}
+          color="gray.400"
+          maxWidth="400px"
+        >
           Exciting projects are on their way! Check back soon for new
           developments.
         </Text>
