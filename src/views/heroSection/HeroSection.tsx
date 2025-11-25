@@ -15,7 +15,7 @@ const HeroSection = () => {
         height="100vh"
         margin="auto"
         maxWidth="1280px"
-        minHeight={{ base: "1024px", xl: "768px" }}
+        minHeight={{ base: "768px", md: "1024px", xl: "768px" }}
         maxHeight="1200px"
       >
         <Box
