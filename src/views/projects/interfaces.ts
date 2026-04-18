@@ -1,7 +1,6 @@
 export enum Category {
   frontend = "Front-end",
   backend = "Back-end",
-  design = "Design",
   challenge = "Challenges",
 }
 
